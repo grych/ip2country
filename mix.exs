@@ -30,7 +30,7 @@ defmodule IP2Country.Mixfile do
   defp package() do
     [
       name: :ip2country,
-      files: ["lib", "priv", "mix.exs", "README*", "LICENSE*"],
+      files: ["lib", "mix.exs", "README*", "LICENSE*"],
       maintainers: ["Tomek Gryszkiewicz"],
       licenses: ["MIT"],
       links: %{
