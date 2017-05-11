@@ -38,5 +38,5 @@ The free IP-to-country database by [DB-IP](https://db-ip.com/db/download/country
 
 ## Contact
 
-(c)2016 Tomek "Grych" Gryszkiewicz, 
+(c)2017 Tomek "Grych" Gryszkiewicz, 
 <grych@tg.pl>
