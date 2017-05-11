@@ -1,4 +1,4 @@
-# Ip2country
+# IP2Country
 
 IP2Country is a simple geolocating module (IP -> Country Code) with built-in database.
 
