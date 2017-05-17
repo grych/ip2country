@@ -1,0 +1,3 @@
+duration:1.0;mem stats:false;sys mem stats:false
+module;test;tags;iterations;elapsed
+IP2CountryBench	ip to country code		1000000	2173234

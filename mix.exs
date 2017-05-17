@@ -3,7 +3,7 @@ defmodule IP2Country.Mixfile do
 
   def project do
     [app: :ip2country,
-     version: "1.0.0",
+     version: "1.1.0",
      elixir: "~> 1.4",
      description: description(),
      package: package(),
@@ -18,7 +18,10 @@ defmodule IP2Country.Mixfile do
   end
 
   defp deps do
-    [{:ex_doc, ">= 0.0.0", only: :dev}]
+    [
+      {:ex_doc, ">= 0.0.0", only: :dev},
+      {:benchfella, "~> 0.3.0", only: :dev }
+    ]
   end
 
   defp description() do
