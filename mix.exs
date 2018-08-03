@@ -3,7 +3,7 @@ defmodule IP2Country.Mixfile do
 
   def project do
     [app: :ip2country,
-     version: "1.1.0",
+     version: "1.2.0",
      elixir: "~> 1.4",
      description: description(),
      package: package(),
@@ -37,7 +37,7 @@ defmodule IP2Country.Mixfile do
       maintainers: ["Tomek Gryszkiewicz"],
       licenses: ["MIT"],
       links: %{
-        "GitHub" => "https://github.com/grych/ip2country", 
+        "GitHub" => "https://github.com/grych/ip2country",
         "Home" => "https://github.com/grych/ip2country"
       }
     ]
