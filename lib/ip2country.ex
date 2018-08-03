@@ -9,13 +9,13 @@ defmodule IP2Country do
   located in `lib/db`.
   """
 
-  @db "db/dbip-country.csv"
+  @db "db/dbip-country.csv.gz"
   @external_resource @db
 
   import IP2Country.Converters
 
   IO.puts "Compiling DBIP database, please be patient"
-  dbip_list = File.stream!(Path.join([__DIR__, @db]), [], :line)
+  dbip_list = File.stream!(Path.join([__DIR__, @db]), [:compressed], :line)
       |> Stream.filter(&String.contains?(&1, ".")) # check if it is a line with IPv4
       |> Stream.map(&decode_line/1)
       |> Stream.map(fn [ip1, ip2, country] -> {ip2integer(ip1), ip2integer(ip2), String.to_atom(country)} end)
