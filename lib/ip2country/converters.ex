@@ -1,7 +1,5 @@
-
 defmodule IP2Country.Converters do
   @moduledoc false
-
   # very basic check! only for pasing dbip file
   @doc false
   def is_ipv4?(line) do
@@ -11,9 +9,9 @@ defmodule IP2Country.Converters do
 
   @doc false
   def decode_line(line) do
-    line 
-      |> String.trim() 
-      |> String.split(",") 
+    line
+      |> String.trim()
+      |> String.split(",")
       |> Enum.map(&String.trim(&1, "\""))
   end
 

@@ -19,7 +19,7 @@ defmodule IP2Country.Mixfile do
 
   defp deps do
     [
-      {:ex_doc, ">= 0.0.0", only: :dev},
+      {:ex_doc, "~> 0.18", only: :dev, runtime: false},
       {:benchfella, "~> 0.3.0", only: :dev }
     ]
   end
